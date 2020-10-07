@@ -49,7 +49,7 @@ label
 }
 
 input,
-select,
+select
 {
     background: rgb(220, 220, 220);
     width: 100%;
@@ -59,10 +59,10 @@ select,
     margin-bottom: 30px;
 }
 
-/* option
+option
 {
-
-} */
+    text-align: right;
+}
 
 /* ================================= 
   Base Layout Styles
@@ -131,6 +131,18 @@ main
 }
 
 .hr-2
+{
+    border-top: 5px solid rgb(48, 48, 59);
+    color: rgb(48, 48, 59);
+}
+
+.zipcode
+{
+    width: 50%;
+
+}
+
+.hr-3
 {
     border-top: 5px solid rgb(48, 48, 59);
     color: rgb(48, 48, 59);
