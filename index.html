@@ -3,7 +3,7 @@
 
     <head>
             <meta name=viewport content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>The Code Review</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -26,6 +26,31 @@
 
             <div class="container">
                 <h3>Contact Information</h3>
+
+                <form>
+                    <fieldset>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone">
+                        <label for="address">Street Address</label>
+                        <input type="address" id="address">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="" selected>Choose State</option>
+                            <option value="new_york">New York</option>
+                            <option value="new_jersey">New Jersey</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="rhode island">Rhode island</option>
+                        </select>
+                        <label for="zip">Zip Code</label>
+                        <input type="code" id="zip">
+                    </fieldset>
+                </form>
             </div>
 
         </main>
