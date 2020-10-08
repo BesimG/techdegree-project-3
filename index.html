@@ -46,27 +46,29 @@
                             <option value="connecticut">Connecticut</option>
                             <option value="rhode island">Rhode island</option>
                         </select>
-                        <label for="zip">Zip Code</label>
+                        <label class="zipcode_label" for="zip">Zip Code</label>
                         <input class="zipcode" type="code" id="zip">
                     </fieldset>
                     <hr class="hr-3">
                     <fieldset>
                         <legend>Newsletter</legend>
                         <p>Select the newsletters you would like to receive</p>
-                        <input class="checkbox" type="checkbox" id="news" name="html_news">
                         <label class="checkbox" for="news">HTML News</label>
-                        <input class="checkbox" type="checkbox" id="news" name="css_news">
+                        <input class="checkbox" type="checkbox" id="news" name="news" value="html_news">
                         <label class="checkbox" for="news">CSS News</label>
-                        <input class="checkbox" type="checkbox" id="news" name="javascript_news">
+                        <input class="checkbox" type="checkbox" id="news" name="news" value="css_news">
                         <label class="checkbox" for="news">Javascript News</label>
+                        <input class="checkbox" type="checkbox" id="news" name="news" value="javascript_news">
                         
                         <p>Newsletter format</p>
-                        <input class="radio" type="radio" id="html" name="html">
                         <label class="radio" for="html">HTML</label>
-                        <input class="radio" type="radio" id="plain_text" name="plain_text">
+                        <input class="radio" type="radio" id="html" name="newsletter">
                         <label class="radio" for="plain_text">Plain text</label>
-
+                        <input class="radio" type="radio" id="plain_text" name="newsletter">
+                        
                         <p>Other topics you'd like to hear about</p>
+                        <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+                        <button class="btn">Sign Up</button>
                     </fieldset>
                 </form>
             </div>
@@ -74,7 +76,7 @@
         </main>
 
         <footer class="main-footer">
-
+            <p class="copyright">Copyright The Code Review</p>
         </footer>
     </body>
 </html>
