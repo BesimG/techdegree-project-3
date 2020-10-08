@@ -39,6 +39,7 @@
                         <label for="city">City</label>
                         <input type="text" id="city" name="user_city">
                         <label for="state">State</label>
+                        
                         <select id="state" name="user_state">
                             <option value="" selected>Choose State</option>
                             <option value="new_york">New York</option>
@@ -46,6 +47,7 @@
                             <option value="connecticut">Connecticut</option>
                             <option value="rhode island">Rhode island</option>
                         </select>
+
                         <label class="zipcode_label" for="zip">Zip Code</label>
                         <input class="zipcode" type="code" id="zip">
                     </fieldset>
@@ -53,18 +55,18 @@
                     <fieldset>
                         <legend>Newsletter</legend>
                         <p>Select the newsletters you would like to receive</p>
-                        <label class="checkbox" for="news">HTML News</label>
-                        <input class="checkbox" type="checkbox" id="news" name="news" value="html_news">
-                        <label class="checkbox" for="news">CSS News</label>
-                        <input class="checkbox" type="checkbox" id="news" name="news" value="css_news">
-                        <label class="checkbox" for="news">Javascript News</label>
-                        <input class="checkbox" type="checkbox" id="news" name="news" value="javascript_news">
+                        <input class="checkbox" type="checkbox" id="html_news" name="news" value="html_news">
+                        <label class="checkbox" for="html_news">HTML News</label><br>
+                        <input class="checkbox" type="checkbox" id="css_news" name="news" value="css_news">
+                        <label class="checkbox" for="css_news">CSS News</label><br>
+                        <input class="checkbox" type="checkbox" id="javascript_news" name="news" value="javascript_news">
+                        <label class="checkbox" for="javascript_news">Javascript News</label>
                         
                         <p>Newsletter format</p>
-                        <label class="radio" for="html">HTML</label>
                         <input class="radio" type="radio" id="html" name="newsletter">
-                        <label class="radio" for="plain_text">Plain text</label>
+                        <label class="radio" for="html">HTML</label><br>
                         <input class="radio" type="radio" id="plain_text" name="newsletter">
+                        <label class="radio" for="plain_text">Plain text</label><br>
                         
                         <p>Other topics you'd like to hear about</p>
                         <textarea name="topics" id="topics" cols="30" rows="10"></textarea>

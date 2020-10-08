@@ -56,9 +56,13 @@ legend
 
 label
 {
-    display: block;
     margin-bottom: 15px;
     font-size: 25px;
+}
+
+fieldset :first-of-type label
+{
+    display: block;
 }
 
 input,
@@ -81,8 +85,9 @@ input[type=checkbox],
 input[type=radio]
 {
     color: rgb(220, 220, 220);
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
+    margin-right: 25px;
 }
 
 textarea
@@ -92,6 +97,12 @@ textarea
     background: rgb(220, 220, 220);
     border: none;
     width: 100%;
+}
+
+fieldset :last-of-type label
+{
+    display: inline-block;
+    
 }
 
 /* ================================= 
@@ -183,13 +194,7 @@ textarea
     border-top: 5px solid rgb(48, 48, 59);
     color: rgb(48, 48, 59);
     margin-top: 25px;
-    margin-bottom: 70px;
-}
-
-.checkbox,
-.radio
-{
-    display: block;
+    margin-bottom: 60px;
 }
 
 .btn
