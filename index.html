@@ -25,22 +25,21 @@
         <main>
 
             <div class="container">
-                <h3>Contact Information</h3>
-
                 <form>
                     <fieldset>
+                        <legend>Contact Information</legend>
                         <label for="full-name">Full Name</label>
-                        <input type="text" id="full-name" required>
+                        <input type="text" id="full-name" name="user_name" required>
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="user_email" required>
                         <label for="phone">Phone Number</label>
-                        <input type="number" id="phone">
+                        <input type="number" id="phone" name="user_phone">
                         <label for="address">Street Address</label>
-                        <input type="address" id="address">
+                        <input type="address" id="address" name="user_address">
                         <label for="city">City</label>
-                        <input type="text" id="city">
+                        <input type="text" id="city" name="user_city">
                         <label for="state">State</label>
-                        <select id="state" name="state">
+                        <select id="state" name="user_state">
                             <option value="" selected>Choose State</option>
                             <option value="new_york">New York</option>
                             <option value="new_jersey">New Jersey</option>
@@ -51,6 +50,24 @@
                         <input class="zipcode" type="code" id="zip">
                     </fieldset>
                     <hr class="hr-3">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <p>Select the newsletters you would like to receive</p>
+                        <input class="checkbox" type="checkbox" id="news" name="html_news">
+                        <label class="checkbox" for="news">HTML News</label>
+                        <input class="checkbox" type="checkbox" id="news" name="css_news">
+                        <label class="checkbox" for="news">CSS News</label>
+                        <input class="checkbox" type="checkbox" id="news" name="javascript_news">
+                        <label class="checkbox" for="news">Javascript News</label>
+                        
+                        <p>Newsletter format</p>
+                        <input class="radio" type="radio" id="html" name="html">
+                        <label class="radio" for="html">HTML</label>
+                        <input class="radio" type="radio" id="plain_text" name="plain_text">
+                        <label class="radio" for="plain_text">Plain text</label>
+
+                        <p>Other topics you'd like to hear about</p>
+                    </fieldset>
                 </form>
             </div>
 
