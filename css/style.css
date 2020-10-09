@@ -265,7 +265,7 @@ textarea
 
 .container
 {
-    width: 60%;
+    max-width: 768px;
 }
 
 /* ---- Page Elements ---- */
@@ -288,20 +288,27 @@ textarea
     color: rgb(48, 48, 59);
 }
 
-.row1,
-.row2,
-.row3,
-.row4,
-.row5,
-.row6
-{
+/* ---- Code snippet provided by Brian Jensen ----- */
+
+div[class^="row"] {
     display: flex;
 }
 
-.zipcode
-{
-    width: 30%;
+div[class^="row"] input,
+div[class^="row"] select {
+    flex-basis: 70%;
+    flex-grow: 1;
 }
+
+div[class^="row"] label {
+flex-basis: 20%;
+}
+
+.zipcode {
+    max-width: 25%;
+}
+
+/* ------------------------------------------------ */
 
 .btn
 {

@@ -24,8 +24,10 @@
         
         <main>
 
+            <!-- Found some of the input types on https://www.w3schools.com/html/html_form_input_types.asp -->
+
             <div class="container clearfix">
-                <form>
+                <form action="index.html" method="POST">
                     <fieldset>
                         <legend>Contact Information</legend>
                         <div class="row1">
@@ -38,11 +40,11 @@
                         </div>
                         <div class="row3">
                             <label for="phone">Phone Number</label>
-                            <input type="number" id="phone" name="user_phone">
+                            <input type="tel" id="phone" name="user_phone">
                         </div>
                         <div class="row4">
-                            <label for="address">Street Address</label>
-                            <input type="address" id="address" name="user_address">
+                            <label for="address">Street aAddress</label>
+                            <input type="text" id="address" name="user_address">
                         </div>
                         <div class="row5">
                             <label for="city">City</label>
@@ -62,7 +64,7 @@
 
                         <div class="row7">
                             <label class="zipcode_label" for="zip">Zip Code</label>
-                            <input class="zipcode" type="code" id="zip">
+                            <input class="zipcode" type="number" id="zip">
                         </div>
                     </fieldset>
                     <hr class="hr-3">
