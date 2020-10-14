@@ -65,6 +65,17 @@ fieldset :first-of-type label
     display: block;
 }
 
+input:focus
+{
+    background: rgb(219, 219, 255);
+}
+
+input::placeholder
+{
+    text-align: right;
+    padding-right: 18px;
+}
+
 input,
 select
 {
@@ -232,13 +243,6 @@ label
     font-size: 15px;
     margin-right: 15px;
 }
-/* 
-label,
-input,
-select
-{
-    flex-direction: space-between;
-} */
 
 input,
 select
