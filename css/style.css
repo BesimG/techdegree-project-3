@@ -68,6 +68,7 @@ fieldset :first-of-type label
 input:focus
 {
     background: rgb(219, 219, 255);
+    transition: .1s;
 }
 
 input::placeholder
